@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checkout {
+            height: 300px;
+            width: 400px;
+            margin: 20px auto;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkout">
+        <h1 class="title">Checkout</h1>
+        <p class="price" data-price="4.99">$4.99 per Juice</p>
+        <p class="description">Quantity:</p>
+        <input type="text" class="quantity" value="1">
+        
+            <p class="total">Total: <span id="total">$4.99</span></p>
+        
+            <button class="btn">Submit Order</button>
+        
+        </div>
+    <script>
+        $(document).ready(function(){
+            $(".checkout").on("keyup", ".quantity", function(){
+                var price = +$(".price").data("price");
+                var quantity = +$(this).val();
+                $("#total").text("$" + price * quantity);
+            })
+        })
+    </script>
+</body>
+</html>

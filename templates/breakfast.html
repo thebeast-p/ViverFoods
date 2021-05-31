@@ -1,0 +1,459 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order your Breakfast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'breakfast_CSS/breakfast.css' %}">
+</head>
+<body>
+    <div class="topnav sidebyside">
+        <a href="../index/welcome.html" style="background-color:black; color:#54dfd8;">VIVER FOODS</a>
+        <a class="active" href="#">Food Menu</a>
+        <a href="../Cart/cart.html">Cart</a>
+        <a href="../Help/help.html">Help</a>
+        <a href="../signin/signin.html" style="float:right;margin-right:10px;">SignIn</a>
+    </div>
+    <div class="type sidebyside">
+        <h1>Breakfast Food</h1>
+        <div class="sidenav">
+          <a href="#" class="active">Breakfast</a>
+          <a href="../lunch/lunch.html">Lunch</a>
+          <a href="../Dinner/dinner.html" >Dinner</a>
+          <a href="../specialThali/specialThali.html">Special Thali</a>
+          <a href="../appetizers/appetizers.html" >Appetizers</a>
+          <a href="../desserts/desserts.html" >Desserts</a>
+
+      </div>
+    </div>
+    
+    <div class="offers boxsize sidebyside "> 
+        <div class="sametag ">
+         <h2> Special Offers</h2>
+        </div>
+        <div class="food-holder">
+            <div class="pic">
+               <div class="picture ">
+                    <img src="{% static 'images/samosa.jpg' %}"  onclick="openForm()" >
+               </div>
+               <div class="name ">
+                    <h5>Samosa</h5>
+               </div>
+               
+               
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 60</h5>
+                <h5 >Rs 40</h5>
+
+               </div>
+            </div>
+            
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/idly.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Idly</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 160</h5>
+                <h5 >Rs 100</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/idly.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Idly</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 160</h5>
+                <h5 >Rs 100</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/idly.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Idly</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 160</h5>
+                <h5 >Rs 100</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/idly.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Idly</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 160</h5>
+                <h5 >Rs 100</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/idly.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Idly</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 160</h5>
+                <h5 >Rs 100</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/idly.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Idly</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 160</h5>
+                <h5 >Rs 100</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/idly.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Idly</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 160</h5>
+                <h5 >Rs 100</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/juice.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Juice</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 100</h5>
+                <h5 >Rs 80</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/breadomlet.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Breadomlet</h5>
+               </div>
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 60</h5>
+                <h5 >Rs 35</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/sandw.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Sandwich </h5>
+               </div> 
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 80</h5>
+                <h5 >Rs 50</h5>
+
+               </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="boxsize sidebyside sametag"> 
+        <div class="sametag">
+            <h2>BreakFast you liked</h2>
+        </div>
+        <div class="food-holder">
+            
+             
+
+        </div>
+
+    </div>
+    <div class="Breakfast fulllist sidebyside sametag"> 
+        <div class="sametag">
+            <h2>Full List</h2>
+        </div>
+        <div class="food-holder">
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/petis.png' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Petis <br><br> <i class="fa fa-heart"></i></h5>
+               </div> 
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 60</h5>
+                <h5 >Rs 50</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                     <img src="{% static 'images/burger.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Burrger <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 50</h5>
+                 <h5 >Rs 45</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                <div class="picture ">
+                     <img src="{% static 'images/burger.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Burrger <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 50</h5>
+                 <h5 >Rs 45</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                <div class="picture ">
+                     <img src="{% static 'images/burger.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Burrger <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 50</h5>
+                 <h5 >Rs 45</h5>
+ 
+                </div>
+             </div>
+            <div class="pic">
+                <div class="picture ">
+                     <img src="{% static 'images/samosa.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Samosa <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 60</h5>
+                 <h5 >Rs 40</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                <div class="picture ">
+                     <img src="{% static 'images/pasta.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Pasta <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 85</h5>
+                 <h5 >Rs 80</h5>
+ 
+                </div>
+             </div>
+             
+             <div class="pic">
+                <div class="picture ">
+                     <img src="{% static 'images/burger.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Burrger <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 50</h5>
+                 <h5 >Rs 45</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                <div class="picture ">
+                     <img src="{% static 'images/ff.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>F.Fries <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 120</h5>
+                 <h5 >Rs 110</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                <div class="picture ">
+                     <img src="{% static 'images/Vsandwich.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Sandwich <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 80</h5>
+                 <h5 >Rs 65</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                 <div class="picture ">
+                     <img src="{% static 'images/idly.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Idly <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 160</h5>
+                 <h5 >Rs 100</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                 <div class="picture ">
+                     <img src="{% static 'images/juice.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Juice <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 100</h5>
+                 <h5 >Rs 80</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                 <div class="picture ">
+                     <img src="{% static 'images/breadomlet.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Breadomlet <br><br> <i class="fa fa-heart"></i></h5>
+                </div>
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 60</h5>
+                 <h5 >Rs 35</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                 <div class="picture ">
+                     <img src="{% static 'images/sandw.jpg' %}"  onclick="openForm()">
+                </div>
+                <div class="name ">
+                     <h5>Sandwich <br><br> <i class="fa fa-heart"></i></h5>
+                </div> 
+                <div class="price ">
+                 <h5 style="text-decoration:line-through; color:grey;">Rs 80</h5>
+                 <h5 >Rs 50</h5>
+ 
+                </div>
+             </div>
+             <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/sandw.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Sandwich <br><br> <i class="fa fa-heart"></i></h5>
+               </div> 
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 80</h5>
+                <h5 >Rs 50</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/sandw.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Sandwich <br><br> <i class="fa fa-heart"></i></h5>
+               </div> 
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 80</h5>
+                <h5 >Rs 50</h5>
+
+               </div>
+            </div>
+            <div class="pic">
+                <div class="picture ">
+                    <img src="{% static 'images/sandw.jpg' %}"  onclick="openForm()">
+               </div>
+               <div class="name ">
+                    <h5>Sandwich <br><br> <i class="fa fa-heart"></i></h5>
+               </div> 
+               <div class="price ">
+                <h5 style="text-decoration:line-through; color:grey;">Rs 80</h5>
+                <h5 >Rs 50</h5>
+
+               </div>
+            </div>
+            
+
+        </div>
+     
+        <div class="form-popup" id="myForm">
+          <form action="" class="form-container">
+            <h1>Quantity Confirmation</h1>
+            <div class="food-display">
+
+            </div>
+            <div class="qty-selector">
+               <form action="#" id="confirmInfo">
+                    <input class="qty-count" id="num" value="1" type="number" oninput="calc()"/><br><br>
+                    <p class="qty-price">Price: <span id="total">50</span></p><br><br>
+                    <input class="qty-submit" type="submit" value="Add to Cart"><br><br>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    
+               </form>
+            </div>
+            
+
+        
+            
+            
+          </form>
+        </div>
+    </div>
+    
+    <script>
+     function calc(){
+          var price = 50;  // this is for now only i.e, here price is fixed ;
+          var count = document.getElementById("num").value;
+          var total = price * count;
+          document.getElementById("total").innerHTML = total; 
+     }
+     
+
+     function openForm() {
+     
+       document.getElementById("myForm").style.display = "block";
+       
+     }
+     
+     function closeForm() {
+       document.getElementById("myForm").style.display = "none";
+     }
+     </script>
+</body>
+</html>

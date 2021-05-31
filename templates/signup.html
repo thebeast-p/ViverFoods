@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/00d56d9417.js" crossorigin="anonymous"></script> 
+    <title>SignUp into Viver</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url('../breakfast/images/samosa.jpg');
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        
+        
+        .sidebyside{
+            float: left;
+        }
+        
+    
+        .topnav{
+            background-color: aliceblue;
+            overflow: hidden;
+            width:100%;
+            border-radius: 10px;
+            position:fixed;
+            
+            
+          }
+        .topnav a{
+            float: left;
+            color:black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            
+            
+          }
+          .topnav a:hover{
+            background-color: black;
+            color:aliceblue;
+          }
+          .topnav a.active{
+            background-color: #54dfd8;
+            color: black;
+          }
+          .form{
+              background-color: rgba(0,0,0,0.7);
+              width: 80%;
+              height: 100vh;
+              margin-left: 10%;
+              
+              
+          }
+          .form-internal{
+              height: 80%;
+              width: 90%;
+              margin-left: 5%;
+              
+              margin-top: 100px;
+              border-radius: 5px;
+              text-align: center;
+              -webkit-box-shadow: 0px 0px 23px 3px rgba(84,223,216,0.75);
+                -moz-box-shadow: 0px 0px 23px 3px rgba(84,223,216,0.75);
+                box-shadow: 0px 0px 23px 3px rgba(84,223,216,0.75);
+                            
+          }
+          h2{
+
+            padding-top: 30px;
+            font-size: 35px;
+            color: #54dfd8 ;
+            text-align: center;
+          }
+          .quick-signup{
+              text-align: center;
+          }
+          .fab{
+            color:white ;
+            padding: 10px 20px;
+            
+        }
+        .fab:hover{
+            color:#54dfd8;
+
+        }
+        .check-loc{
+            text-align: center;
+        }
+        h3{
+            color: #54dfd8;
+            font-size: 15px;
+            padding-top: 20px;
+            
+        }
+        .check-loc input{
+            height: 20px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            border-radius: 5px ;
+            border: 2px solid #54dfd8;
+            text-align: center;
+        }
+        
+        .check-loc button{
+            background-color: #54dfd8;
+            color:black;
+            border:2px solid #54dfd8;
+            height:22px;
+            border-radius: 5px;
+        }
+        .check-loc button:hover{
+            background-color: white;
+            border-color: red;
+        }
+        .info{
+            text-align: center;
+            
+        }
+        .info input{
+            width: 40%;
+            text-align: center;
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+            height:35px;
+            border:2px solid #54dfd8;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-right: 10px;;
+        }
+        
+        .info button{
+            height: 40px;
+            background-color: #54dfd8;
+            border-color: #54dfd8;
+            width: 30%;
+            margin-top: 30px;
+            text-align:center;
+            border-radius: 5px;
+
+        }
+        .info button:hover{
+            width:32%;
+        }
+        .form-internal p{
+            color: white;
+        }
+        .form-internal a{
+            text-decoration: none;
+            color: red;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="topnav sidebyside">
+        <a href="../index/welcome.html" style="background-color:black; color:#54dfd8;">VIVER FOODS</a>
+        <a  href="../breakfast/breakfast.html">Food Menu</a>
+        <a href="../Cart/cart.html" >Cart</a>
+        <a href="../Help/help.html">Help</a>
+        <a href="../signin/signin.html" class="active" style="float:right;margin-right:10px;">SignIn</a>
+    </div>
+    <div class="form sidebyside">
+        <form action="" class="form-internal">
+            <h2>WELCOME TO VIVER </h2>
+            <!--
+            <div class="quick-signup">
+            <a href="#"><i class="fab fa-facebook fa-2x" ></i></a>
+            <a href="#"><i class="fab fa-google fa-2x" ></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x" ></i></a>
+            </div>
+
+            
+            -->
+            <br><br>
+            <div class="info">
+            <input type="text" placeholder=" First name">
+            <input type="text" placeholder=" Last name">
+            <input type="text" placeholder=" Email ID"><br>
+            <input type="text" placeholder=" Phone Number">
+            <input type="text" placeholder=" Flat, Houuse no.*, landmark">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Pincode ">
+            <input type="password" placeholder="Password"><br>
+            <button>SignUP</button>
+            </div>
+            <p>Already a user <a href="../signin/signin.html">Login</a> Here</p>
+            <div class="check-loc">
+            <h3>Before SignUp please check if we are available at your location or not 😊 <input type="text" placeholder="Enter Your Pincode"> <button class="submit">check</button> </h3>
+            </div>
+            
+        </form>
+
+    </div>
+
+    
+</body>
+</html>
